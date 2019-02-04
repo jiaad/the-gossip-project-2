@@ -9,7 +9,7 @@ require 'faker'
 
  User.delete_all
  Gossip.delete_all
-
+ City.delete_all
 10.times do |i|
   city = City.create(name: Faker::Address.city, zip_code: Faker::Address.zip_code)
  end 
@@ -19,7 +19,7 @@ require 'faker'
   #Gossip.create(content: Faker::Name.first_name)
 end
 
-20.times do
+10.times do
   gossip = Gossip.create(content: Faker::HarryPotter.quote, user: User.all.sample)
  end
 
