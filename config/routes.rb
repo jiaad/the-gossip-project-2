@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get '/user/:user_id', to: 'user_page#user_show'
   get '/gossip', to: 'gossip_page#show_gossip'
   get 'welcome/:first_name', to: 'welcome_page#welcome'
   get 'contact' , to: 'contact_page#contact'

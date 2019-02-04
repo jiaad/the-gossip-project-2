@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2019_02_02_121733) do
   end
 
   create_table "gossips", force: :cascade do |t|
+    t.text "title"
     t.text "content"
     t.integer "user_id"
     t.datetime "created_at", null: false
