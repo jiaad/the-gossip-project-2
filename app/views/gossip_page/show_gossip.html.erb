@@ -1,0 +1,25 @@
+<h1>Bienvenue sur My Gossip</h1>
+
+<p>voici les Gossips:</p>
+
+
+
+<% @gossip.each_with_index do |gossip|%>
+
+
+ <div class="card text-center  ">
+  <div class="card-body">
+  <div class="card-header ">
+    <p class="card-text">a mettre title</p>
+  </div>
+  <div class="card-body ">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text"><%=gossip.id %></p>
+    <p class="card-text">    <%=gossip.user.first_name%></p>
+    <p class="card-text"><%=gossip.content%></p>
+
+    <a href="#" class="btn btn-primary">see more</a>
+    <hr>
+  </div>
+</div>
+<%end%>

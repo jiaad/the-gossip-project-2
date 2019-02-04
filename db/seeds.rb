@@ -7,8 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
 
-# User.delete_all
-# Gossip.delete_all
+ User.delete_all
+ Gossip.delete_all
 
 10.times do |i|
   city = City.create(name: Faker::Address.city, zip_code: Faker::Address.zip_code)
