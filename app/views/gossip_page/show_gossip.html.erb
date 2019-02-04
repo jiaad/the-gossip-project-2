@@ -14,13 +14,9 @@
     <p class="card-text">a mettre title</p>
   </div>
   <div class="card-body ">
-    <p class="card-text"><%=gossip.user.first_name%></p>
+    
     <p class="card-text"><%=gossip.content%></p>
-
-    <a href="/user/#" class="btn btn-primary">see more</a>
-    <%= link_to(@user)%>
-      <a href="/user/#" class="btn btn-primary">see more</a>
-    end
+    <%= link_to("#{gossip.user.first_name}", "user/#{gossip.user.id}")%>
     <hr>
   </div>
 </div>
