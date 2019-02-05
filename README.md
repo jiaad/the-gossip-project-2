@@ -8,4 +8,4 @@
 ### ensuite ```rails server``` pour commencer le serveur
 
 
-- Made with hard work by Robinson, Amzdou , Jiad , jaymile
+- Made with hard work by Robinson, Amadou , Jiad , jaymile
